@@ -1,30 +1,76 @@
-## 🔗 Live Dashboard (Google Sheets)
-👉 View the live CRM dashboard here:  https://docs.google.com/spreadsheets/d/148SLImRvdIjrBIzUM_VLuuZS-PvLJ_ZDuJYlYlzAGcI/edit?usp=sharing
+# CRM Sales Dashboard — Google Sheets
 
+A dynamic CRM and sales performance dashboard built in **Google Sheets** using the Maven Analytics sales pipeline dataset. The project transforms raw opportunity data into an interactive reporting experience for monitoring pipeline outcomes, quarterly trends, and sales-agent performance.
 
-🎯 **Project Overview & Objectives**
-This project was developed entirely within Google Sheets following the structured Maven Analytics data challenge. The core focus was to explore a corporate sales pipeline dataset, perform data quality assurance (QA), and transform raw transactional records into an interactive executive dashboard to track quarterly performance and sales agent metrics.
+## 📊 Dashboard Preview
 
-🛠️ **Step-by-Step Implementation**
+![CRM Sales Dashboard](dashboard.png)
 
-🔹 Objective 1: Data Preparation & Quality Assurance (ETL)
-Data Exploration & QA: Profiled the sales_pipeline.csv dataset to analyze total won opportunities, identify products sold, determine the analysis time horizon, and check for missing or anomalous values.
-Data Joining & Modeling: Opened sales_teams.csv and used advanced lookup formulas (XLOOKUP / VLOOKUP) to dynamically map and bring each sales agent's respective Manager and Regional Office into the main sales pipeline table.
+> The dashboard includes KPI scorecards, quarterly performance analysis, win/loss distribution, sales-agent rankings, and interactive filters.
 
-🔹 Objective 2: Data Exploration with Pivot Tables
-Quarterly Trend Analysis: Structured dynamic Pivot Tables to isolate and calculate total opportunities won by quarter.
-Conversion Metrics: Built a specialized view showing the precise breakdown percentage of Won vs. Lost opportunities on a quarterly basis.
-Performance Benchmarking: Generated a ranking pivot table tracking quarterly wins per sales agent, sorted in descending order to spotlight top performers.
-Dynamic Formatting: Restructured the layout to place quarters as dynamic columns, sorted chronologically with the most recent quarter appearing first for stakeholder convenience.
+## 🔗 Live Dashboard
 
-🔹 **Objective 3: Dynamic Dashboard & UI Design**
-KPI Scorecards: Implemented a Scorecard chart visual displaying opportunities won in the most recent quarter (2017-Q4) compared directly against the previous quarter (2017-Q3) to show growth metrics.
-Funnel Visualization: Visualized the win/loss distribution percentage for the latest quarter using a clean Pie Chart.
-Leaderboard Performance: Deployed a horizontal Bar Chart visualizing opportunities won by individual sales agents during 2017-Q4.
-Interactive Controls (Slicers): Embedded interactive Slicers for Regional Office and Manager, turning a static spreadsheet into a fully dynamic reporting tool.
+[**Open the live CRM dashboard in Google Sheets →**](https://docs.google.com/spreadsheets/d/148SLImRvdIjrBIzUM_VLuuZS-PvLJ_ZDuJYlYlzAGcI/edit?usp=sharing)
 
+## 🎯 Project Objectives
 
-🧰 **Tools & Formulas Used**
-Platform: Google Sheets
-Advanced Formulas: XLOOKUP, Logical Operators (IF/IFS), Aggregate Functions (SUMIFS, COUNTIFS).
-Features: Dynamic Pivot Tables, Scorecards, Custom Bar & Pie Charts, Dashboard Slicers, and Data Sorting/Filtering.
+- Prepare and validate the sales pipeline data.
+- Enrich opportunity records with sales-manager and regional-office information.
+- Analyze quarterly sales performance and conversion outcomes.
+- Compare sales-agent performance using clear, decision-ready visuals.
+- Build an interactive dashboard that supports filtering and exploration.
+
+## ✨ Key Dashboard Features
+
+### KPI Scorecards
+Compares opportunities won in the most recent quarter, **2017 Q4**, with the previous quarter, **2017 Q3**, to highlight performance movement.
+
+### Quarterly Trend Analysis
+Tracks opportunities won by quarter and presents the data in a stakeholder-friendly chronological layout.
+
+### Win/Loss Analysis
+Displays the percentage split between won and lost opportunities for the latest quarter using a focused pie-chart visualization.
+
+### Sales-Agent Leaderboard
+Ranks sales agents by opportunities won during 2017 Q4, making high-performing contributors easy to identify.
+
+### Interactive Slicers
+Enables dynamic filtering by:
+
+- Regional Office
+- Manager
+
+## 🛠️ Data Preparation & Analysis
+
+1. **Data exploration and quality assurance** — Reviewed the sales pipeline data, checked values and time periods, and identified the products and opportunity outcomes included in the analysis.
+2. **Data enrichment** — Joined sales-team information to opportunity records using `XLOOKUP` / `VLOOKUP` to map each agent to the appropriate manager and regional office.
+3. **Pivot-table analysis** — Created summaries for quarterly wins, win/loss conversion rates, and sales-agent performance.
+4. **Dashboard design** — Combined scorecards, charts, pivot tables, slicers, and formatting into a concise reporting interface.
+
+## 🧰 Tools & Techniques
+
+| Category | Details |
+| --- | --- |
+| Platform | Google Sheets |
+| Formulas | `XLOOKUP`, `VLOOKUP`, `IF`, `IFS`, `SUMIFS`, `COUNTIFS` |
+| Analysis | Pivot tables, sorting, filtering, quarterly trend analysis |
+| Visualizations | KPI scorecards, bar charts, pie charts |
+| Interactivity | Dashboard slicers for manager and regional-office filtering |
+
+## 📁 Repository Contents
+
+| File | Description |
+| --- | --- |
+| [`dashboard.png`](dashboard.png) | Preview image of the completed dashboard |
+| [`README.md`](README.md) | Project documentation and dashboard overview |
+
+## 🚀 How to Use
+
+1. Open the [live Google Sheets dashboard](https://docs.google.com/spreadsheets/d/148SLImRvdIjrBIzUM_VLuuZS-PvLJ_ZDuJYlYlzAGcI/edit?usp=sharing).
+2. Use the slicers to filter results by regional office or manager.
+3. Review the KPI scorecards for quarterly movement.
+4. Explore the charts and pivot tables to compare outcomes and agent performance.
+
+## 📌 Project Context
+
+This project was developed as part of the **Maven Analytics sales challenge** and demonstrates practical spreadsheet-based skills in data preparation, lookup-based data modeling, business analysis, dashboard design, and data storytelling.
